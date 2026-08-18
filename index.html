@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Nuclear Medicine Logistics Explorer</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="patient-mode">
+    <div id="system-clock">00:00:00</div>
+
+    <div id="message-box"></div>
+
+    <header>
+      <h1>Royal Institution Nuclear Medicine Workshop</h1>
+
+      <div class="tabs">
+        <button id="patient-tab" class="active">Patient Mode</button>
+
+        <button id="nuclear-tab">Nuclear Supply Mode</button>
+      </div>
+    </header>
+
+    <div id="layout">
+      <div id="left-panel">
+        <!-- PATIENT SELECTION -->
+
+        <div id="patient-panel">
+          <h3>Patients</h3>
+
+          <div id="patient-list"></div>
+        </div>
+
+        <!-- ROUTE INFORMATION -->
+
+        <div id="route-panel">
+          <h3>Route Information</h3>
+
+          <p>Select a location.</p>
+        </div>
+      </div>
+
+      <div id="map"></div>
+
+      <div id="right-panel">
+        <div id="learn-content">
+          <h2>Learn More</h2>
+
+          <p>Select a location.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- HELP BUTTON -->
+
+    <button id="help-button">?</button>
+
+    <!-- HELP POPUP -->
+
+    <div id="help-popup">
+      <div id="help-box">
+        <button id="close-help">×</button>
+
+        <h2>How to Play</h2>
+
+        <p>
+          Welcome to the Nuclear Medicine Logistics Explorer. Explore how
+          patients and medical radioisotopes move through the nuclear medicine
+          supply chain.
+        </p>
+
+        <h3>Patient Mode</h3>
+
+        <p>
+          Select a patient from the panel on the left, then select a hospital on
+          the map to calculate the patient's journey.
+        </p>
+
+        <h3>Nuclear Supply Mode</h3>
+
+        <p>
+          Select an isotope production facility and a hospital to view the route
+          used to transport the isotope to the hospital.
+        </p>
+
+        <hr />
+
+        <h2>Map Symbols</h2>
+
+        <div class="legend-item">
+          <img src="images/House.png" />
+
+          <span>Patient Location</span>
+        </div>
+
+        <div class="legend-item">
+          <img src="images/Hospital_Norm.png" />
+
+          <span>Hospital</span>
+        </div>
+
+        <div class="legend-item">
+          <img src="images/PowerPlant.png" />
+
+          <span>Isotope Production Facility</span>
+        </div>
+
+        <div class="legend-item">
+          <img src="images/Plane.png" />
+
+          <span>Air Travel</span>
+        </div>
+
+        <div class="legend-line">
+          <div class="road-line"></div>
+
+          <span>Road Transport</span>
+        </div>
+
+        <div class="legend-line">
+          <div class="flight-line"></div>
+
+          <span>Air Freight</span>
+        </div>
+
+        <hr />
+
+        <h2>Disclaimer</h2>
+
+        <p>
+          The information presented in this game is for educational purposes
+          only and does not fully accurately represent the real-world nuclear
+          medicine supply chain. Liberty has been taken when deciding the
+          isotopes produced at each facility to make the game more engaging and
+          to highlight the isotopes used in nuclear medicine, although important
+          facts (such as the UK's lack of domestic production) is accuratley
+          represented. In reality, the nuclear medicine supply chain is more
+          complex and involves many more facilities, isotopes, and
+          transportation routes than are represented in this game. Additioanlly,
+          Isotopes are not directly shipped between production facilities and
+          hospitals, but rather are sent to distribution centers before being
+          sent to hospitals.
+        </p>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

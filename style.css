@@ -1,0 +1,480 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+
+  font-family: Arial, sans-serif;
+
+  overflow: hidden;
+}
+
+/* ========== HEADER AND TABS ========== */
+
+header {
+  position: absolute;
+
+  top: 15px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  z-index: 2000;
+
+  background: white;
+
+  padding: 15px 25px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+.tabs button {
+  padding: 8px 15px;
+
+  margin: 3px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.tabs button:hover {
+  transform: translateY(-2px);
+}
+
+.tabs .active {
+  background: #228b22;
+
+  color: white;
+}
+
+/* ========== LAYOUT ========== */
+
+#layout {
+  display: grid;
+
+  grid-template-columns:
+    280px
+    1fr
+    360px;
+
+  height: 100vh;
+}
+
+/* ========== MAP ========== */
+
+#map {
+  height: 100%;
+
+  width: 100%;
+}
+
+/* ========== SIDE PANELS ========== */
+
+#left-panel,
+#right-panel {
+  padding: 20px;
+
+  overflow-y: auto;
+
+  transition: background-color 0.6s ease;
+}
+
+.patient-mode #left-panel,
+.patient-mode #right-panel {
+  background: #edf6ff;
+}
+
+.nuclear-mode #left-panel,
+.nuclear-mode #right-panel {
+  background: #eef9ef;
+}
+
+#left-panel {
+  border-right: 1px solid #ccc;
+}
+
+#right-panel {
+  border-left: 1px solid #ccc;
+}
+
+/* ========== PANELS ========== */
+
+#patient-panel,
+#route-panel,
+#learn-content {
+  background: white;
+
+  border-radius: 12px;
+
+  padding: 15px;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+#patient-panel {
+  margin-top: 80px;
+
+  margin-bottom: 15px;
+}
+
+#route-panel {
+  margin-top: 0;
+}
+
+#learn-content {
+  margin-top: 80px;
+}
+
+/* ========== BUTTONS ========== */
+
+.route-button {
+  padding: 8px 12px;
+
+  margin-top: 15px;
+
+  margin-right: 5px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+}
+
+.select-button {
+  background: #228b22;
+
+  color: white;
+}
+
+.clear-button {
+  background: #c0392b;
+
+  color: white;
+}
+
+/* ========== MESSAGE ========== */
+
+#message-box {
+  position: absolute;
+
+  top: 100px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  z-index: 3000;
+
+  display: none;
+
+  background: #fff3cd;
+
+  color: #856404;
+
+  padding: 15px 25px;
+
+  border-radius: 10px;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+  font-weight: bold;
+}
+
+.message-show {
+  display: block !important;
+
+  animation: fadeMessage 0.3s ease;
+}
+
+@keyframes fadeMessage {
+  from {
+    opacity: 0;
+
+    transform: translate(-50%, -10px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translate(-50%, 0);
+  }
+}
+
+/* ========== LEARN PANEL ========== */
+
+#learn-content h2 {
+  margin-bottom: 15px;
+}
+
+#learn-content h3 {
+  margin-top: 20px;
+
+  margin-bottom: 10px;
+}
+
+#learn-content ul {
+  margin-left: 20px;
+}
+
+.leaflet-marker-icon {
+  filter: brightness(1.8);
+}
+
+.hospital-banner {
+  width: 100%;
+
+  height: 180px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+
+  margin-bottom: 15px;
+}
+
+#learn-content hr {
+  margin: 15px 0;
+}
+
+#learn-content p {
+  margin: 8px 0;
+}
+
+/* ========== SYSTEM CLOCK ========== */
+
+#system-clock {
+  position: absolute;
+
+  top: 20px;
+
+  left: 70px;
+
+  z-index: 3000;
+
+  background: white;
+
+  padding: 10px 16px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.18);
+
+  font-family: "Courier New", monospace;
+
+  font-size: 18px;
+
+  font-weight: bold;
+
+  color: #333;
+
+  letter-spacing: 1px;
+
+  border-left: 4px solid #228b22;
+}
+
+/* ========== HELP BUTTON ========== */
+
+#help-button {
+  position: absolute;
+
+  top: 20px;
+
+  right: 20px;
+
+  z-index: 3000;
+
+  width: 40px;
+
+  height: 40px;
+
+  border-radius: 50%;
+
+  border: none;
+
+  background: white;
+
+  font-size: 22px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+
+  transition: 0.2s;
+}
+
+#help-button:hover {
+  transform: scale(1.1);
+}
+
+/* ========== HELP POPUP ========== */
+
+#help-popup {
+  display: none;
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  z-index: 4000;
+
+  background: rgba(0, 0, 0, 0.35);
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+#help-box {
+  background: white;
+
+  width: 450px;
+
+  max-height: 70vh;
+
+  overflow-y: auto;
+
+  padding: 25px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+
+  position: relative;
+}
+
+#help-box h2 {
+  margin-bottom: 15px;
+}
+
+#help-box h3 {
+  margin-top: 15px;
+
+  margin-bottom: 5px;
+}
+
+#close-help {
+  position: absolute;
+
+  right: 15px;
+
+  top: 10px;
+
+  border: none;
+
+  background: none;
+
+  font-size: 28px;
+
+  cursor: pointer;
+}
+
+.legend-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin: 10px 0;
+}
+
+.legend-item img {
+  width: 34px;
+
+  height: 34px;
+
+  object-fit: contain;
+}
+
+.legend-line {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin: 12px 0;
+}
+
+.road-line {
+  width: 40px;
+
+  height: 4px;
+
+  background: #d22;
+
+  border-radius: 2px;
+}
+
+.flight-line {
+  width: 40px;
+
+  height: 0;
+
+  border-top: 4px dashed #1d7cff;
+}
+
+#patient-panel {
+  padding: 15px;
+}
+
+#patient-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 6px;
+}
+
+.patient-select {
+  width: 100%;
+
+  text-align: left;
+
+  padding: 8px 10px;
+
+  border: 1px solid #ccc;
+
+  background: transparent;
+
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+
+.patient-select:hover {
+  background: #eeeeee;
+}
+
+.patient-select.selected {
+  background: #dddddd;
+
+  border-color: #999;
+}
