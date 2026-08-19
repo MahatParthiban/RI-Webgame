@@ -52,24 +52,24 @@ const patients = [
   },
 
   {
-    name: "Haazima binti Anwar",
+    name: "Caroline Rousseau ",
     type: "Patient",
     coords: [52.13947297196391, -106.5742796298504],
     isotope: "Saskatoon, Saskatchewan, Canada", //  MISLEADING NAME - not used for isotope, used for location instead now
   },
 
   {
-    name: "Amélie Rousseau",
+    name: "Janghyun Kim",
     type: "Patient",
     coords: [36.3310482037849, 127.37638647785163],
     isotope: "Yongjeon-dong, Daejeon, South Korea", //  MISLEADING NAME - not used for isotope, used for location instead now
   },
 
   {
-    name: "Amélie Robyn Goodrem",
+    name: "Mukti Taruno",
     type: "Patient",
     coords: [-7.733808148561492, 109.0088011063192],
-    isotope: "Surabaya, East Java, Indonesia  ", //  MISLEADING NAME - not used for isotope, used for location instead now
+    isotope: "Cilacap, Indonesia  ", //  MISLEADING NAME - not used for isotope, used for location instead now
   },
 ];
 
