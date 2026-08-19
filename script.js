@@ -99,236 +99,151 @@ const locations = [
   //UK LOCATIONS------------------------------------------------------------------------------------------
   {
     name: "High Flux Reactor at the Energy & Health Campus",
-
     image: "images/Netherlands.png",
-
     loc: "Westerduinweg 3, 1755 LE Petten, Netherlands",
-
     op: "NRG PALLAS",
-
     type: "Facility",
-
     country: "Netherlands",
-
     coords: [52.78689119254482, 4.678354742328971],
-
     spectrogram: "images/NRG_spect.png",
-
     produces: [
       "Major European supplier of medical radioisotopes for nuclear medicine",
-
-      "Supports production and distribution of isotopes used in diagnostic and therapeutic applications",
-
-      "Provides essential materials for radiopharmaceutical manufacturing",
-
-      "Part of the international supply chain supporting hospitals across Europe",
+      "Supports production/distribution of diagnostic and therapeutic isotopes",
+      "Supplies materials for radiopharmaceutical manufacturing",
+      "Part of the international supply chain for European hospitals",
     ],
   },
 
   {
     name: "STFC Rutherford Appleton Laboratory (RAL)",
-
     image: "images/RAL.png",
-
     loc: "Campus, Harwell, Chilton, Didcot OX11 0QX",
-
     op: "STFC",
-
     type: "Facility",
-
     coords: [51.65712656955595, -1.316522391816756],
-
     spectrogram: "images/STFC_Spect.png",
-
     produces: [
-      "National research facility operated by the Science and Technology Facilities Council (STFC)",
-
-      "Develops advanced laser, accelerator, and photonics technologies for scientific research",
-
-      "Supports research into future applications of high-power laser systems and nuclear science",
-
-      "Provides a platform for collaboration between universities, industry, and research organisations",
+      "National research facility (STFC)",
+      "Develops laser, accelerator and photonics technologies",
+      "Researches high-power laser and nuclear science applications",
+      "Collaboration platform for universities, industry and research bodies",
     ],
   },
 
   {
     name: "National Nuclear Laboratory (UKNNL) Preston Laboratory",
-
     image: "images/NNL.png",
-
     loc: " Springfields, Preston, PR4 0XJ",
-
     op: "UKNNL (leased site)",
-
     type: "Facility",
-
     coords: [53.777918910796714, -2.81017717383105],
-
     spectrogram: "images/NNL_spect.png",
-
     produces: [
-      "UK government-owned nuclear research organisation specialising in nuclear science and technology",
-
-      "Develops innovative methods for recovering valuable materials from existing nuclear resources",
-
-      "Supports research into future domestic supplies of medical radionuclides",
-
-      "Works with universities and healthcare partners to advance next-generation nuclear medicine technologies",
+      "UK government-owned nuclear science and technology research body",
+      "Develops methods to recover valuable materials from nuclear resources",
+      "Researches future domestic supply of medical radionuclides",
+      "Partners with universities/healthcare on next-gen nuclear medicine",
     ],
   },
 
   {
     name: "GE Healthcare Amersham",
-
     loc: "White Lion Rd, Little Chalfont, Amersham HP7 9LL",
     op: "GE",
-
     image: "images/DECOMISSIONED.png",
-
     type: "Facility",
-
     spectrogram: "images/NO PRODUCTION FOUND.jpg",
-
     coords: [51.66989636858831, -0.5769276746728057],
-
     produces: [
-      "Historic centre for the development and manufacture of radiopharmaceutical technologies",
-
-      "Supports nuclear medicine through diagnostic imaging products and healthcare solutions",
-
-      "Develops technologies used in PET and SPECT imaging applications",
-
-      "Provides expertise in radiopharmaceutical science and medical imaging technologies",
+      "Historic radiopharmaceutical development/manufacturing centre",
+      "Supported nuclear medicine via diagnostic imaging products",
+      "Developed PET/SPECT imaging technologies",
+      "Expertise in radiopharmaceutical science and medical imaging",
     ],
   },
 
   {
     name: "Guy's Hospital",
     type: "Hospital",
-
     loc: "Great Maze Pond, London SE1 9RT",
     op: "NHS",
-
     coords: [51.498, -0.087],
-
     image: "images/guys.jpg",
-
     spectrogram: "images/guys_spectrogram.png",
-
     services: [
-      "Diagnostic nuclear medicine services are available at both Guy's Hospital and St Thomas' Hospital.",
-
-      "Specialist clinics include thyroid, thyroid oncology, neuroendocrine, radium, and osteoporosis services.",
-
-      "Radionuclide therapies, including radioactive iodine, are delivered at Guy's Hospital with specialist inpatient care when required.",
-
-      "Dedicated paediatric imaging and cardiac stress testing are also provided.",
-
-      "Services operate Monday–Friday, offering both diagnostic imaging and therapeutic procedures.",
+      "Diagnostic nuclear medicine at Guy's and St Thomas' Hospitals",
+      "Specialist clinics: thyroid, thyroid oncology, neuroendocrine, radium, osteoporosis",
+      "Radionuclide therapy (incl. iodine) with inpatient care",
+      "Paediatric imaging and cardiac stress testing",
+      "Mon–Fri diagnostic and therapeutic services",
     ],
   },
 
   {
     name: "Southmead Hospital",
     type: "Hospital",
-
     loc: "Southmead Rd, Bristol BS10 5NB",
     op: "NHS",
-
     coords: [51.49662727653111, -2.5918792893636278],
-
     image: "images/SMD.png",
-
     spectrogram: "images/Southmead_spect.png",
-
     services: [
-      "Provides a regional nuclear medicine service supporting patients across Bristol and the South West.",
-
-      "Offers a wide range of diagnostic imaging procedures to assist in the investigation and monitoring of disease.",
-
-      "Works closely with oncology, cardiology, endocrinology, and orthopaedic teams to support patient care.",
-
-      "Specialist imaging is performed using advanced gamma camera technology by a multidisciplinary team.",
-
-      "Appointments are available throughout the week, delivering both routine and specialist nuclear medicine services.",
+      "Regional nuclear medicine service for Bristol/South West",
+      "Wide range of diagnostic imaging for disease investigation/monitoring",
+      "Works with oncology, cardiology, endocrinology, orthopaedics",
+      "Gamma camera imaging by multidisciplinary team",
+      "Routine and specialist appointments available throughout the week",
     ],
   },
 
   {
     name: "Royal Marsden Sutton",
     type: "Hospital",
-
     loc: "Downs Rd, Sutton SM2 5PT",
     op: "NHS",
-
     coords: [51.343535217912695, -0.19050994524107095],
-
     image: "images/RMD.png",
-
     spectrogram: "images/RMS_spect.png",
-
     services: [
-      "Provides specialist nuclear medicine and PET/CT services across the Sutton and Chelsea hospital sites.",
-
-      "Offers advanced imaging pathways supporting cancer diagnosis, staging, treatment planning, and long-term patient follow-up.",
-
-      "Delivers a comprehensive range of radionuclide therapies through one of the UK's largest and most experienced nuclear medicine therapy centres.",
-
-      "Works closely with leading research institutions to develop innovative imaging techniques and support clinical research.",
-
-      "Dedicated multidisciplinary teams provide both diagnostic imaging and therapeutic procedures using state-of-the-art facilities.",
+      "Nuclear medicine and PET/CT across Sutton and Chelsea sites",
+      "Imaging for cancer diagnosis, staging, treatment planning, follow-up",
+      "One of UK's largest radionuclide therapy centres",
+      "Research partnerships for imaging innovation",
+      "Multidisciplinary diagnostic and therapeutic teams",
     ],
   },
 
   {
     name: "University Hospital Coventry & Warwickshire",
     type: "Hospital",
-
     loc: "Clifford Bridge Rd, Binley, Coventry CV2 2DX",
     op: "NHS",
-
     coords: [52.42093956368127, -1.4370068604724067],
-
     image: "images/Wrwck.png",
-
     spectrogram: "images/Wrwck_spect.png",
-
     services: [
-      "Supports both routine and specialist nuclear medicine investigations for patients from across the Midlands.",
-
-      "Performs functional imaging and molecular diagnostics to assist clinicians in diagnosing and monitoring a wide range of diseases.",
-
-      "Provides dedicated imaging pathways for oncology, cardiology, neurology, renal, and endocrine services.",
-
-      "Offers specialised PET/CT and SPECT/CT imaging alongside a range of radionuclide therapies delivered by experienced multidisciplinary teams.",
-
-      "Contributes to clinical research and innovation while providing high-quality diagnostic and therapeutic nuclear medicine services.",
+      "Routine and specialist nuclear medicine for the Midlands",
+      "Functional imaging and molecular diagnostics",
+      "Imaging pathways for oncology, cardiology, neurology, renal, endocrine",
+      "PET/CT and SPECT/CT plus radionuclide therapies",
+      "Contributes to clinical research and innovation",
     ],
   },
 
   {
     name: "Chaucer Hospital, Canterbury",
     type: "Hospital",
-
     loc: "Nackington Rd, Canterbury CT4 7AR",
     op: "Circle Health Group",
-
     coords: [51.261998968825814, 1.0875948547999439],
-
     image: "images/CRC.png",
-
     spectrogram: "images/Chaucer_spect.png",
-
     services: [
-      "Provides independent private healthcare services with a focus on accessible diagnostic investigations and patient-centred care.",
-
-      "Features a dedicated imaging department supporting a variety of non-invasive diagnostic procedures.",
-
-      "Uses advanced radiology equipment to assist consultants in assessing and managing a wide range of medical conditions.",
-
-      "Serves the local Kent community through specialist-led imaging and outpatient diagnostic services.",
-
-      "Does not operate a dedicated nuclear medicine department or provide radionuclide-based diagnostic and therapeutic procedures.",
+      "Independent private healthcare, focused on accessible diagnostics",
+      "Dedicated imaging department for non-invasive procedures",
+      "Advanced radiology for assessing/managing medical conditions",
+      "Serves local Kent community with imaging/outpatient services",
+      "No dedicated nuclear medicine department or radionuclide procedures",
     ],
   },
 
@@ -337,225 +252,141 @@ const locations = [
   {
     name: "Cross Cancer Institute, Edmonton",
     type: "Hospital",
-
     loc: "11560 University Avenue, Edmonton, AB T6G 1Z2, Canada",
     op: "Alberta Health Services",
-
     coords: [53.51830743090501, -113.53100045282729],
-
     image: "images/Cross_Cancer.jpg",
-
     spectrogram: "images/Cross_Cancer_spect.png",
-
     services: [
-      "Provides comprehensive cancer diagnosis, treatment and specialist oncology services for patients across Northern and Central Alberta.",
-
-      "Features a dedicated cyclotron at the Cross Cancer Institute operated by Tracer Hub, producing a range of radioisotopes for clinical and research use.",
-
-      "Works alongside the Medical Isotope and Cyclotron Facility (MICF) in Edmonton, with the two cyclotrons designed to support one another during scheduled or unexpected maintenance.",
-
-      "Provides nuclear medicine and advanced diagnostic imaging services using radioisotopes for the investigation and management of cancer and other medical conditions.",
-
-      "Provides radiation oncology, systemic cancer treatments and specialist therapies, supported by multidisciplinary oncology teams.",
-
-      "Forms part of Alberta's wider radiopharmaceutical network, with a new facility under construction beside the Tom Baker Cancer Centre in Calgary that will add a third cyclotron and expand provincial production capacity.",
+      "Cancer diagnosis, treatment and oncology services for N./Central Alberta",
+      "On-site cyclotron (operated by Tracer Hub) producing radioisotopes",
+      "Works with Edmonton's Medical Isotope and Cyclotron Facility (MICF) as mutual maintenance backup",
+      "Nuclear medicine and advanced radioisotope imaging",
+      "Radiation oncology and systemic cancer therapies",
+      "Part of Alberta's radiopharmaceutical network; new Calgary facility (3rd cyclotron) under construction",
     ],
   },
 
   {
     name: "Northeast Cancer Centre, Sudbury",
     type: "Hospital",
-
     loc: "41 Ramsey Lake Rd, Sudbury, ON P3E 5J1, Canada",
     op: "Health Sciences North",
-
     coords: [46.469062239128135, -80.9956144455267],
-
     image: "images/Northeast_Cancer.jpg",
-
     spectrogram: "images/Northeast_Cancer_spect.png",
-
     services: [
-      "Provides specialist cancer diagnosis, treatment and supportive care for patients throughout Northeastern Ontario.",
-
-      "Provides systemic cancer treatment including chemotherapy and other oncology therapies for a large regional patient population.",
-
-      "Provides radiation therapy services for the treatment and management of a wide range of cancers.",
-
-      "Supports specialist cancer care through diagnostic imaging, laboratory services and multidisciplinary oncology teams.",
-
-      "Acts as a regional cancer centre, reducing the need for patients in Northern Ontario to travel to Southern Ontario for specialist treatment.",
+      "Cancer diagnosis, treatment and supportive care for NE Ontario",
+      "Systemic cancer treatment (chemotherapy etc.) for large regional population",
+      "Radiation therapy services",
+      "Diagnostic imaging, labs, multidisciplinary oncology teams",
+      "Regional centre reducing need to travel to Southern Ontario",
     ],
   },
 
   {
     name: "Princess Margaret Cancer Centre, Toronto",
     type: "Hospital",
-
     loc: "610 University Avenue, Toronto, ON M5G 2M9, Canada",
     op: "University Health Network",
-
     coords: [43.65818075421179, -79.3900349711645],
-
     image: "images/Princess_Margaret.jpg",
-
     spectrogram: "images/Princess_Margaret_spect.png",
-
     services: [
-      "Provides highly specialised cancer diagnosis, treatment and research services across a wide range of cancer types.",
-
-      "Features a dedicated Radiation Medicine Program providing advanced radiation oncology and precision radiation treatments.",
-
-      "Provides access to functional and molecular imaging, including PET imaging using short-lived positron-emitting radioisotopes.",
-
-      "The wider UHN network operates a cyclotron facility at Toronto General Hospital, located separately from Princess Margaret, which produces short-lived diagnostic isotopes for PET imaging.",
-
-      "The UHN cyclotron produces isotopes including F-18, Ga-68 and Cu-64, which are incorporated into radiopharmaceuticals and transported to Princess Margaret for clinical imaging.",
-
-      "Because these isotopes have relatively short half-lives, radiopharmaceuticals are produced close to the point of use and rapidly transported from the cyclotron facility to the Princess Margaret imaging departments.",
-
-      "Provides specialist medical, surgical and systemic cancer treatments supported by multidisciplinary oncology teams.",
+      "Specialised cancer diagnosis, treatment and research across cancer types",
+      "Radiation Medicine Program for advanced/precision radiation treatment",
+      "PET imaging using short-lived positron-emitting isotopes",
+      "UHN cyclotron (Toronto General Hospital, separate site) supplies diagnostic isotopes",
+      "Cyclotron produces F-18, Ga-68, Cu-64 for radiopharmaceuticals",
+      "Short-lived isotopes made close to point of use, rapidly transported",
+      "Specialist medical, surgical, systemic cancer treatment teams",
     ],
   },
 
   {
     name: "Nova Scotia Cancer Centre, Halifax",
     type: "Hospital",
-
     loc: "1276 South Park Street, Halifax, NS B3H 2Y9, Canada",
     op: "Nova Scotia Health",
-
     coords: [44.6376, -63.5809],
-
     image: "images/Nova_Scotia_Cancer_Centre.jpg",
-
     spectrogram: "images/Nova_Scotia_Cancer_Centre_spect.png",
-
     services: [
-      "Provides specialist cancer diagnosis, treatment and supportive care for patients across Nova Scotia and Atlantic Canada.",
-
-      "Operates a cyclotron and radiopharmaceutical production facility capable of producing short-lived radioisotopes for advanced medical imaging.",
-
-      "Produces PET radiopharmaceuticals on-site, allowing short-lived tracers to be manufactured and used rapidly within the hospital.",
-
-      "Operates a comprehensive nuclear medicine radiopharmacy that prepares a range of diagnostic radiopharmaceuticals for use within the QEII and across Nova Scotia.",
-
-      "Provides PET-CT and other nuclear medicine imaging for cancer diagnosis, staging and monitoring, as well as neurological and cardiac investigations.",
-
-      "Provides radiation oncology and systemic cancer treatments supported by specialist imaging, laboratory investigations and multidisciplinary oncology services.",
+      "Cancer diagnosis, treatment, supportive care for Atlantic Canada",
+      "On-site cyclotron/radiopharmaceutical production of short-lived isotopes",
+      "PET radiopharmaceuticals made and used on-site",
+      "Radiopharmacy supplies QEII and wider Nova Scotia",
+      "PET-CT, nuclear medicine imaging (cancer, neuro, cardiac)",
+      "Radiation oncology and systemic cancer treatment, multidisciplinary teams",
     ],
   },
 
   //facilities Canada --
   {
     name: "McMaster Nuclear Reactor",
-
     image: "images/McMaster.jpg",
-
     loc: "1280 Main Street West, Hamilton, ON L8S 4K1, Canada",
-
     op: "McMaster University",
-
     type: "Facility",
-
     coords: [43.2609, -79.9192],
-
     spectrogram: "images/McMaster_spect.png",
-
     produces: [
-      "Canada's largest university-based research reactor and a major facility for medical isotope production",
-
-      "Produces a wide range of radioisotopes for medical, research and technical applications",
-
-      "Specialises in reactor-produced medical isotopes, with a particularly important role in the international supply of I-125",
-
-      "Also operates a dedicated cyclotron facility for producing short-lived positron-emitting isotopes for medical imaging",
-
-      " Houses a 5 MW open-pool Materials Test Reactor (MTR) used for neutron irradiation and radioisotope production",
-
-      "Also operates a separate 16.5 MeV GE PETtrace negative-ion cyclotron for short-lived positron-emitting isotopes",
-
-      "Certain isotopes have to be special ordered and produced in advance, which can add significant time to the supply chain.",
+      "Canada's largest university-based research reactor; major isotope producer",
+      "Wide range of medical, research and technical radioisotopes",
+      "Key international supplier of reactor-produced I-125",
+      "Also operates a dedicated cyclotron for short-lived PET isotopes",
+      "5 MW open-pool MTR reactor for neutron irradiation/isotope production",
+      "Separate 16.5 MeV GE PETtrace negative-ion cyclotron",
+      "Some isotopes require special advance ordering, adding lead time",
     ],
   },
 
   {
     name: "TRIUMF Medical Isotope Production Facility",
-
     image: "images/TRIUMF.jpg",
-
     loc: "4004 Wesbrook Mall, Vancouver, BC V6T 2A3, Canada",
-
     op: "TRIUMF / BWXT Medical",
-
     type: "Facility",
-
     coords: [49.2447, -123.8635],
-
     spectrogram: "images/TRIUMF_spect.png",
-
     produces: [
-      "Short-lived diagnostic and therapeutic medical radioisotopes for PET and other nuclear medicine applications",
-
-      "Operates three on-site cyclotrons within the Radiochemistry Annex",
-
-      "Includes ACSI TR-13, ACSI TR-24 and ACSI TR-30 cyclotrons supporting different isotope-production requirements",
-
-      "Major Canadian production and distribution hub supplying medical isotopes internationally",
+      "Short-lived diagnostic/therapeutic isotopes for PET and nuclear medicine",
+      "Three on-site cyclotrons (Radiochemistry Annex)",
+      "ACSI TR-13, TR-24 and TR-30 cyclotrons for varied isotope needs",
+      "Major Canadian production/distribution hub, international supply",
     ],
   },
 
   {
     name: "UHN Cyclotron Facility",
-
     image: "images/UHN_Cyclotron.jpg",
-
     loc: "200 Elizabeth St, Toronto, ON M5G 2C4, Canada",
-
     op: "University Health Network",
-
     type: "Facility",
-
     coords: [43.6587, -79.3883],
-
     spectrogram: "images/UHN_Cyclotron_spect.png",
-
     produces: [
-      "Cyclotron-based medical isotope production facility within the University Health Network",
-
-      "Produces short-lived positron-emitting radioisotopes primarily for advanced PET imaging",
-
-      "Produces radiopharmaceutical tracers for cancer imaging and other specialised diagnostic applications",
-
-      "Works closely with UHN's nuclear medicine and oncology services, allowing short-lived tracers to be produced close to their point of clinical use",
+      "Cyclotron-based isotope production within UHN",
+      "Short-lived positron-emitting isotopes for PET imaging",
+      "Radiopharmaceutical tracers for cancer/specialist diagnostics",
+      "Close proximity to UHN nuclear medicine/oncology services",
     ],
   },
 
   {
     name: "High Flux Isotope Reactor (HFIR) - Oak Ridge National Laboratory",
-
     image: "images/HFIR.jpg",
-
     country: "USA",
-
     loc: "1 Bethel Valley Rd, Oak Ridge, TN 37830, USA",
-
     op: "U.S. Department of Energy / Oak Ridge National Laboratory",
-
     type: "Facility",
-
     coords: [35.9325, -84.31],
-
     spectrogram: "images/HFIR_spect.png",
-
     produces: [
-      "85 MW high-flux research reactor used for isotope production, neutron irradiation and scientific research",
-
-      "Produces Strontium-89 through neutron capture on enriched Strontium-88 targets",
-
-      "Operates as part of the U.S. Department of Energy Isotope Program, supplying medical and research radioisotopes",
-
-      "Provides a major international source of radioisotopes used in cancer therapy, diagnostic imaging and other medical applications",
+      "85 MW high-flux research reactor for isotope production and research",
+      "Produces Strontium-89 via neutron capture on Sr-88 targets",
+      "Part of the DOE Isotope Program",
+      "Major international source of isotopes for cancer therapy and diagnostics",
     ],
   },
 
@@ -564,169 +395,107 @@ const locations = [
   {
     name: "Konyang University Hospital, Daejeon",
     type: "Hospital",
-
     loc: "158 Gwanjeodong-ro, Seo-gu, Daejeon, South Korea",
     op: "Konyang University",
-
     coords: [36.306963864115446, 127.34220738465795],
-
     image: "images/Konyang_University_Hospital.jpg",
-
     spectrogram: "images/Konyang_University_Hospital_spect.png",
-
     services: [
-      "Provides specialist nuclear medicine services for the diagnosis, staging, and monitoring of a wide range of diseases.",
-
-      "Operates an on-site medical cyclotron for the production of short-lived radioisotopes used in PET and other advanced molecular imaging procedures.",
-
-      "The cyclotron can support production of a broad range of medical radioisotopes using liquid, gas, and specialised solid target systems, depending on the facility configuration.",
-
-      "Produces short-lived positron-emitting tracers for applications including oncology, neurology, and cardiac imaging, allowing radiopharmaceuticals to be prepared close to the point of clinical use.",
-
-      "The facility's isotope-production capabilities support both routine clinical imaging and more specialised research applications involving advanced radiopharmaceuticals.",
-
-      "Provides integrated nuclear medicine, radiopharmacy, and diagnostic imaging services, reducing the transport time required for short-lived radiopharmaceuticals.",
+      "Nuclear medicine for diagnosis, staging, monitoring",
+      "On-site cyclotron producing short-lived isotopes for PET/molecular imaging",
+      "Supports broad isotope range via liquid/gas/solid target systems",
+      "Tracers for oncology, neurology, cardiac imaging",
+      "Isotope production supports clinical and research use",
+      "Integrated radiopharmacy reduces transport time",
     ],
   },
 
   {
     name: "Daejeon Eulji University Hospital",
     type: "Hospital",
-
     loc: "95 Dunsanseo-ro, Seo-gu, Daejeon, South Korea",
     op: "Eulji University",
-
     coords: [36.3544, 127.3826],
-
     image: "images/Eulji_University_Hospital.jpg",
-
     spectrogram: "images/Eulji_University_Hospital_spect.png",
-
     services: [
-      "Provides specialist nuclear medicine and PET/CT services for the diagnosis, staging, and monitoring of a wide range of diseases.",
-
-      "Operates an on-site Siemens ECLIPSE medical cyclotron for the production of short-lived radioisotopes used in PET imaging and nuclear medicine.",
-
-      "The cyclotron supports the production of medical radionuclides and radiopharmaceuticals for clinical PET imaging, allowing short-lived products to be prepared close to the point of use.",
-
-      "The facility's cyclotron-based production capabilities are particularly suited to short-lived positron-emitting radioisotopes used for advanced molecular imaging.",
-
-      "The combination of on-site isotope production and nuclear medicine services reduces the transport time required for short-lived radiopharmaceuticals and supports reliable clinical imaging.",
+      "Nuclear medicine and PET/CT for diagnosis, staging, monitoring",
+      "On-site Siemens ECLIPSE cyclotron for short-lived isotopes",
+      "Produces radionuclides/radiopharmaceuticals for PET imaging",
+      "Suited to short-lived positron-emitting isotopes",
+      "On-site production reduces transport time for short-lived tracers",
     ],
   },
 
   {
     name: "Daejeon St. Mary's Hospital",
     type: "Hospital",
-
     loc: "64 Daeheung-ro, Jung-gu, Daejeon, South Korea",
     op: "The Catholic University of Korea",
-
     coords: [36.3218, 127.4204],
-
     image: "images/Daejeon_St_Marys.jpg",
-
     spectrogram: "images/Daejeon_St_Marys_spect.png",
-
     services: [
-      "Provides specialist nuclear medicine services for diagnostic imaging and radionuclide-based investigations.",
-
-      "Operates PET/CT for molecular and functional imaging, particularly for cancer diagnosis and treatment assessment.",
-
-      "Operates two SPECT gamma cameras for nuclear medicine examinations.",
-
-      "Uses nuclear medicine imaging to identify metabolic and biochemical abnormalities before structural changes become apparent.",
-
-      "Provides specialist nuclear medicine services as part of a major university-affiliated hospital in Daejeon.",
-
-      "Operates an on site cyclotron alongside the nuclear medicine department, allowing short-lived radioisotopes to be produced and used rapidly for clinical imaging.",
+      "Nuclear medicine diagnostic imaging and radionuclide investigations",
+      "PET/CT for cancer diagnosis and treatment assessment",
+      "Two SPECT gamma cameras",
+      "Detects metabolic/biochemical abnormalities pre-structural change",
+      "Specialist nuclear medicine at major university-affiliated hospital",
+      "On-site cyclotron enables rapid use of short-lived isotopes",
     ],
   },
 
   {
     name: "Chungnam National University Hospital, Daejeon",
     type: "Hospital",
-
     loc: "282 Munhwa-ro, Jung-gu, Daejeon, South Korea",
     op: "Chungnam National University",
-
     coords: [36.3222, 127.4119],
-
     image: "images/Chungnam_National_University_Hospital.jpg",
-
     spectrogram: "images/Chungnam_National_University_Hospital_spect.png",
-
     services: [
-      "Major university hospital providing specialist medical services to patients across Daejeon and the surrounding region.",
-
-      "Provides specialist oncology, diagnostic imaging and multidisciplinary medical care.",
-
-      "Supports nuclear medicine investigations through specialist diagnostic and imaging services.",
-
-      "Provides advanced diagnostic facilities supporting cancer, cardiovascular and neurological investigations.",
-
-      "Acts as a major regional teaching and research hospital within Daejeon.",
+      "Major university hospital serving Daejeon region",
+      "Specialist oncology, diagnostic imaging, multidisciplinary care",
+      "Supports nuclear medicine investigations",
+      "Advanced imaging for cancer, cardiovascular, neurological conditions",
+      "Major regional teaching/research hospital",
     ],
   },
 
   // facilities South Korea --
   {
     name: "KAERI Advanced Radiation Technology Institute",
-
     image: "images/KAERI.jpg",
-
     loc: "29 Geumgu-gil, Jeongeup-si, Jeollabuk-do, Republic of Korea 56212",
-
     op: "Korea Atomic Energy Research Institute (KAERI)",
-
     type: "Facility",
-
     coords: [35.57, 126.856],
-
     spectrogram: "images/KAERI_spect.png",
-
     produces: [
-      "Major Korean research facility specialising in accelerator-based radioisotope production and radiopharmaceutical research.",
-
-      "Operates a high-current 30 MeV RFT-30 cyclotron with multiple beamlines and dedicated target systems for different radioisotope production requirements.",
-
-      "Produces a range of medical radioisotopes, including radiometals used for PET imaging, theranostics, and radiopharmaceutical research.",
-
-      "Supports production and development of longer-lived radiometals as well as short-lived radionuclides for medical applications.",
-
-      "Supplies research quantities of selected radioisotopes to hospitals and research groups across South Korea.",
-
-      "Provides specialist facilities for target irradiation, radioisotope separation, purification, and radiopharmaceutical development.",
+      "Major accelerator-based radioisotope production/radiopharmaceutical research facility",
+      "High-current 30 MeV RFT-30 cyclotron, multiple beamlines/targets",
+      "Produces radiometals for PET imaging, theranostics, research",
+      "Develops longer-lived radiometals and short-lived radionuclides",
+      "Supplies research quantities to hospitals/research groups nationally",
+      "Facilities for target irradiation, isotope separation, purification, radiopharmaceutical development",
     ],
   },
 
   {
     name: "Korea Institute of Radiological & Medical Sciences (KIRAMS)",
-
     image: "images/KIRAMS.jpg",
-
     loc: "75 Nowon-ro, Nowon-gu, Seoul, Republic of Korea 01812",
-
     op: "Korea Institute of Radiological & Medical Sciences (KIRAMS)",
-
     type: "Facility",
-
     coords: [37.628, 127.082],
-
     spectrogram: "images/KIRAMS_spect.png",
-
     produces: [
-      "National research and medical facility specialising in radiological and nuclear medicine technologies.",
-
-      "Operates cyclotron-based radioisotope production facilities supporting PET, SPECT, and other nuclear medicine applications.",
-
-      "Produces and researches medical radioisotopes for diagnostic imaging, therapeutic applications, and radiopharmaceutical development.",
-
-      "Supports production of short-lived radionuclides for PET imaging, allowing radiopharmaceuticals to be prepared close to clinical use.",
-
-      "Provides research and development facilities for the production, processing, and clinical application of medical radioisotopes.",
-
-      "Works closely with Korea Cancer Center Hospital and the wider KIRAMS research network to translate radioisotope technologies into clinical applications.",
+      "National facility for radiological/nuclear medicine technologies",
+      "Cyclotron-based production for PET, SPECT, and other applications",
+      "Produces/researches isotopes for diagnostics, therapy, radiopharmaceutical development",
+      "Short-lived radionuclides prepared close to clinical use",
+      "R&D for isotope production, processing, clinical application",
+      "Works with Korea Cancer Center Hospital and KIRAMS network",
     ],
   },
 
@@ -735,172 +504,107 @@ const locations = [
   {
     name: "Dr Soetomo Regional General Hospital",
     type: "Hospital",
-
     loc: "Jl. Prof. DR. Moestopo No. 6-8, Surabaya, East Java, Indonesia",
     op: "East Java Provincial Government",
-
     coords: [-7.2679, 112.758],
-
     image: "images/Soetomo.jpg",
-
     spectrogram: "images/Soetomo_spect.png",
-
     services: [
-      "Provides specialist nuclear medicine services for the diagnosis, staging, and monitoring of a wide range of diseases.",
-
-      "Provides nuclear medicine imaging including bone scans, thyroid imaging, renal investigations, cardiac perfusion studies, and brain imaging.",
-
-      "Uses gamma-camera-based imaging with a range of diagnostic radiopharmaceuticals, alongside therapeutic nuclear medicine procedures.",
-
-      "Provides specialised lung and functional imaging services that can support the investigation of respiratory disease.",
-
-      "Provides radionuclide therapy including radioactive iodine treatment and other therapeutic nuclear medicine procedures.",
-
-      "Acts as a major referral hospital in East Java, providing specialist nuclear medicine services to patients from across the region.",
+      "Nuclear medicine for diagnosis, staging, monitoring",
+      "Bone, thyroid, renal, cardiac perfusion and brain imaging",
+      "Gamma-camera imaging plus therapeutic procedures",
+      "Specialised lung/functional imaging for respiratory disease",
+      "Radionuclide therapy incl. iodine",
+      "Major East Java referral hospital",
     ],
   },
 
   {
     name: "RSUP Dr. Hasan Sadikin",
     type: "Hospital",
-
     loc: "Jl. Pasteur No. 38, Bandung, West Java, Indonesia",
     op: "Ministry of Health, Republic of Indonesia",
-
     coords: [-6.9002, 107.6186],
-
     image: "images/Hasan_Sadikin.jpg",
-
     spectrogram: "images/Hasan_Sadikin_spect.png",
-
     services: [
-      "National referral centre providing comprehensive nuclear medicine and molecular imaging services.",
-
-      "Operates multiple SPECT/CT systems and a PET/CT scanner for advanced functional and molecular imaging.",
-
-      "Provides V/Q studies and other nuclear medicine investigations relevant to the assessment of pulmonary and cardiovascular function.",
-
-      "Operates dedicated radiopharmacy laboratories for the preparation and handling of medical radiopharmaceuticals.",
-
-      "Provides diagnostic and therapeutic nuclear medicine services for oncology, cardiology, endocrinology, neurology, nephrology, and other specialist applications.",
-
-      "Provides specialist radioisotope therapy including I-131, Sm-153, Lu-177, and other radionuclide-based treatments.",
-
-      "Acts as a national centre for nuclear medicine education, research, and specialist clinical care.",
+      "National referral centre for nuclear medicine/molecular imaging",
+      "Multiple SPECT/CT systems plus PET/CT",
+      "V/Q studies for pulmonary/cardiovascular assessment",
+      "Dedicated radiopharmacy labs",
+      "Diagnostic/therapeutic nuclear medicine across many specialties",
+      "Radioisotope therapy: I-131, Sm-153, Lu-177 and others",
+      "National centre for nuclear medicine education/research",
     ],
   },
 
   {
     name: "RSUP Nasional Dr. Cipto Mangunkusumo",
     type: "Hospital",
-
     loc: "Jl. Diponegoro No. 71, Jakarta, Indonesia",
     op: "Ministry of Health, Republic of Indonesia",
-
     coords: [-6.1948, 106.8327],
-
     image: "images/RSCM.jpg",
-
     spectrogram: "images/RSCM_spect.png",
-
     services: [
-      "Indonesia's major national referral hospital providing highly specialised medical and nuclear medicine services.",
-
-      "Provides advanced nuclear medicine imaging for the diagnosis, staging, and monitoring of cancer and other complex diseases.",
-
-      "Provides SPECT/CT and PET/CT molecular imaging services using diagnostic radiopharmaceuticals.",
-
-      "Provides specialist nuclear medicine investigations across oncology, cardiology, neurology, endocrinology, and other clinical areas.",
-
-      "Provides radionuclide-based therapeutic procedures as part of its specialist nuclear medicine service.",
-
-      "Its central Jakarta location makes it an important national destination for patients requiring advanced nuclear medicine investigations and treatment.",
+      "Indonesia's major national referral hospital for nuclear medicine",
+      "Advanced imaging for cancer and complex disease",
+      "SPECT/CT and PET/CT molecular imaging",
+      "Specialist investigations: oncology, cardiology, neurology, endocrinology",
+      "Radionuclide-based therapeutic procedures",
+      "Key national destination for advanced nuclear medicine care",
     ],
   },
 
   {
     name: "RSUP Dr. Sardjito",
     type: "Hospital",
-
     loc: "Jl. Kesehatan No. 1, Sekip, Yogyakarta, Indonesia",
     op: "Ministry of Health, Republic of Indonesia",
-
     coords: [-7.7681, 110.3731],
-
     image: "images/Sardjito.jpg",
-
     spectrogram: "images/Sardjito_spect.png",
-
     services: [
-      "Provides specialist nuclear medicine services for patients from Yogyakarta and surrounding regions.",
-
-      "Provides diagnostic nuclear medicine imaging using gamma-camera and SPECT-based techniques.",
-
-      "Supports investigation of cancer, endocrine disorders, cardiovascular disease, renal function, and other conditions using radiopharmaceuticals.",
-
-      "Provides radionuclide-based diagnostic and therapeutic procedures as part of its specialist nuclear medicine service.",
-
-      "Supports multidisciplinary patient care by integrating nuclear medicine imaging with oncology, radiology, and other specialist departments.",
-
-      "Acts as a major referral hospital for Central Java and the Yogyakarta region, providing access to specialist nuclear medicine services.",
+      "Nuclear medicine for Yogyakarta and surrounding regions",
+      "Gamma-camera and SPECT-based diagnostic imaging",
+      "Investigates cancer, endocrine, cardiovascular, renal conditions",
+      "Radionuclide diagnostic/therapeutic procedures",
+      "Integrates nuclear medicine with oncology/radiology care",
+      "Major referral hospital for Central Java/Yogyakarta",
     ],
   },
 
   // indonesia facilities
-
   {
     name: "BATAN Teknologi (BaTek) Radioisotope Production Facility",
-
     image: "images/BaTek.jpg",
-
     loc: "Serpong, South Tangerang, Banten, Indonesia",
-
     op: "BATAN / BRIN",
-
     type: "Facility",
-
     coords: [-6.3539, 106.665],
-
     spectrogram: "images/BaTek_spect.png",
-
     produces: [
-      "Major Indonesian facility for the production and processing of medical radioisotopes and radiopharmaceuticals",
-
-      "Supplies technetium-99m for use in nuclear medicine procedures",
-
-      "Produces radioisotopes through reactor-based production and subsequent radiochemical processing",
-
-      "Supports the domestic supply of radioisotopes used for diagnostic and therapeutic nuclear medicine",
+      "Major Indonesian radioisotope/radiopharmaceutical production facility",
+      "Supplies technetium-99m for nuclear medicine",
+      "Reactor-based production with radiochemical processing",
+      "Supports domestic supply for diagnostic/therapeutic use",
     ],
   },
 
- 
-
   {
     name: "TRIGA 2000 Bandung Research Reactor",
-
     image: "images/TRIGA_Bandung.jpg",
-
     loc: "Bandung, West Java, Indonesia",
-
     op: "BRIN",
-
     type: "Facility",
-
     coords: [-6.8908, 107.6107],
-
     spectrogram: "images/TRIGA_Bandung_spect.png",
-
     produces: [
-      "2 MW research reactor used for nuclear research, education, training and radioisotope production",
-
-      "Supports production of radioisotopes for medical and research applications",
-
-      "Provides neutron irradiation facilities for the development and production of radioisotopes",
-
-      "Supports Indonesian nuclear medicine through the production of radionuclides used in radiopharmaceutical applications",
-
-      "Forms part of Indonesia's national network of research reactors supporting medical isotope production",
+      "2 MW reactor for research, education, training and isotope production",
+      "Produces isotopes for medical/research use",
+      "Neutron irradiation facilities for isotope development",
+      "Supports Indonesian nuclear medicine via radionuclide production",
+      "Part of Indonesia's national research reactor network",
     ],
   },
 ];
@@ -1721,6 +1425,8 @@ function openSpectrogram(image) {
     "width=700,height=500",
   );
 
+  spectrogramWindow.document.open();
+
   spectrogramWindow.document.write(`
 
 <html>
@@ -1747,7 +1453,6 @@ background:#111;
 
 }
 
-
 img{
 
 max-width:95%;
@@ -1760,7 +1465,6 @@ max-height:95%;
 
 </head>
 
-
 <body>
 
 <img src="${image}">
@@ -1770,6 +1474,10 @@ max-height:95%;
 </html>
 
 `);
+
+  spectrogramWindow.document.close();
+
+  spectrogramWindow.focus();
 }
 
 // ========== CLOCK ==========
