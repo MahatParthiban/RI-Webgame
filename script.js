@@ -598,7 +598,7 @@ const locations = [
     op: "BRIN",
     type: "Facility",
     coords: [-6.8908, 107.6107],
-    spectrogram: "images/TRIGA_Bandung_spect.png",
+    spectrogram: "images/TRIGA_spect.png",
     produces: [
       "2 MW reactor for research, education, training and isotope production",
       "Produces isotopes for medical/research use",
