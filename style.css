@@ -478,3 +478,83 @@ header h1 {
 
   border-color: #999;
 }
+
+/* ========== GLOSSARY TERMS ========== */
+
+.glossary-term {
+  border-bottom: 2px dotted #228b22;
+
+  cursor: help;
+
+  font-weight: 600;
+
+  color: #1a6b1a;
+}
+
+.glossary-term:hover {
+  background: #e6f4ea;
+}
+
+/* ========== GLOSSARY POPUP ========== */
+
+#glossary-popup {
+  display: none;
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  z-index: 5000;
+
+  background: rgba(0, 0, 0, 0.35);
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+#glossary-box {
+  background: white;
+
+  width: 340px;
+
+  max-height: 60vh;
+
+  overflow-y: auto;
+
+  padding: 22px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+
+  position: relative;
+}
+
+#glossary-box h3 {
+  margin-bottom: 10px;
+
+  color: #228b22;
+}
+
+#close-glossary {
+  position: absolute;
+
+  right: 15px;
+
+  top: 10px;
+
+  border: none;
+
+  background: none;
+
+  font-size: 28px;
+
+  cursor: pointer;
+}

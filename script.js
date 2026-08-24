@@ -42,6 +42,95 @@ const facilityIcon = L.icon({
   popupAnchor: [0, -45],
 });
 
+// ========== GLOSSARY ==========
+
+const glossary = {
+  isotope: {
+    label: "Isotope",
+    def: "An atom of an element with the same number of protons but a different number of neutrons, making it slightly heavier or lighter than usual. Some isotopes are radioactive and used in medicine.",
+  },
+  radioisotope: {
+    label: "Radioisotope",
+    def: "An unstable version of an isotope. It naturally releases energy that doctors can detect or use to treat illness.",
+  },
+  radiopharmaceutical: {
+    label: "Radiopharmaceutical",
+    def: "A medicine containing a small amount of  material, used to diagnose or treat disease.",
+  },
+  radionuclide: {
+    label: "Radionuclide",
+    def: "Another term for an unstable atom, often used interchangeably with 'radioisotope'.",
+  },
+  cyclotron: {
+    label: "Cyclotron",
+    def: "A machine that accelerates particles in a spiral path to create short-lived unstable isotopes for medical imaging.",
+  },
+  reactor: {
+    label: "Reactor",
+    def: "A facility that splits atoms (nuclear fission) in a controlled way, often used to produce unstable isotopes for medicine.",
+  },
+  pet: {
+    label: "PET (Positron Emission Tomography)",
+    def: "A scan that uses a  tracer to show how organs and tissues are functioning, not just their shape.",
+  },
+  spect: {
+    label: "SPECT (Single Photon Emission CT)",
+    def: "A scan that uses a gamma-emitting tracer to build 3D images of function inside the body.",
+  },
+  scintigraphy: {
+    label: "Scintigraphy",
+    def: "An imaging technique where a small amount of unstable material is used to produce pictures of specific organs or tissues.",
+  },
+  theranostics: {
+    label: "Theranostics",
+    def: "A combined approach that uses the same or similar molecules to both diagnose and treat a disease.",
+  },
+  "half-life": {
+    label: "Half-life",
+    def: "The time it takes for half of a  substance to decay. Short half-lives mean isotopes must be used quickly.",
+  },
+  "gamma camera": {
+    label: "Gamma Camera",
+    def: "A device that detects gamma rays given off by a  tracer inside the body to create diagnostic images.",
+  },
+};
+
+function highlightGlossaryTerms(html) {
+  let result = html;
+
+  Object.keys(glossary).forEach((term) => {
+    const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const regex = new RegExp(`\\b(${escaped})\\b`, "gi");
+
+    result = result.replace(
+      regex,
+      `<span class="glossary-term" data-term="${term}">$1</span>`,
+    );
+  });
+
+  return result;
+}
+
+function openGlossary(term) {
+  const entry = glossary[term];
+  if (!entry) return;
+
+  document.getElementById("glossary-term-title").innerText = entry.label;
+  document.getElementById("glossary-term-definition").innerText = entry.def;
+  document.getElementById("glossary-popup").style.display = "flex";
+}
+
+document.addEventListener("click", (e) => {
+  const el = e.target.closest(".glossary-term");
+  if (el) {
+    openGlossary(el.dataset.term);
+  }
+});
+
+document.getElementById("close-glossary").addEventListener("click", () => {
+  document.getElementById("glossary-popup").style.display = "none";
+});
+
 // ========== MAP DATA ==========
 const patients = [
   {
@@ -1311,7 +1400,7 @@ Open Facility Production Spectrogram
 `;
   }
 
-  document.getElementById("learn-content").innerHTML = html;
+  document.getElementById("learn-content").innerHTML = highlightGlossaryTerms(html);
 }
 
 // ========== THEME SWITCHING ==========
